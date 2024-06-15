@@ -1,31 +1,33 @@
 import React from "react";
-import { Typography, Button } from "@mui/material";
+
+
 import { Link } from "react-router-dom";
 import "../App.css"
 
 const Home = () => {
   return (
-    <div>
-      <Typography sx={{ margin:"5%" }} variant="h3" align="center">
-        Get Hired or Hire people for free!
-      </Typography>
-      <div>
-        <ul className="ul">
-          <li>
-          <Button sx={{ margin:"2% 3%"}} variant="outlined">
-            <Link to="/employer/dashboard">
+    <div className="container text-center">
+      <h1 className="mt-5 fs-1">
+        <span className="text-warning">Get Hired</span> or Hire people for free!
+      </h1>
+      
+      <div className="container mt-5">
+        <div className="row pt-5">
+        <div className="col-6">
+          <button className="btn btn-primary text-decoration-none ">
+            <Link to="/employer/dashboard" className="text-decoration-none text-light fs-4">
               Hire talent
             </Link>
-            </Button>
-          </li>
-          <li>
-          <Button sx={{ margin:"2% 3%"}} variant="outlined">
-            <Link to="/employee/feed">
+            </button>
+            </div>
+            <div className="col-6">
+            <button className="btn btn-secondary text-decoration-none ">
+            <Link to="/employee/feed" className="text-decoration-none text-light fs-4">
               Get Job Now
             </Link>
-            </Button>
-          </li>
-        </ul>
+            </button>
+            </div>
+        </div>
       </div>
     </div>
   );

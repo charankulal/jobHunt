@@ -7,6 +7,16 @@
   pointer-events: none;
 }
 
+.fs-1{
+  font-size: xx-large !important;
+  font-weight: bold;
+  font-style: normal;
+  font-family: Arial, sans-serif;
+}
+.logo{
+  background-image: url(./logo.png);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
