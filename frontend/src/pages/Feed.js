@@ -56,7 +56,7 @@ console.log(post);
       {post &&
         post.map((p) => {
           return (
-            <Grid key={p.id} item xs={12} md={6} lg={4}>
+            <Grid key={p._id} item xs={12} md={6} lg={4}>
               <Card sx={{ padding: "3%", overflow: "hidden", width: "84%" }}>
                 <Typography
                   variant="h5"
@@ -74,7 +74,7 @@ console.log(post);
                 </Typography>
 
                 <Typography gutterBottom  variant="body">Skills : </Typography>
-                {p.techs.map((s, i) => {
+                {p.skill.map((s, i) => {
                   return (
                     <Typography variant="body" gutterBottom key={i}>
                       {s} .
